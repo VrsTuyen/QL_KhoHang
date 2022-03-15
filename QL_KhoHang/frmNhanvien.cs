@@ -10,12 +10,16 @@ using System.Windows.Forms;
 
 namespace QL_KhoHang
 {
-    public partial class Form1 : Form
+    public partial class frmNhanvien : Form
     {
-        public Form1()
+        public frmNhanvien()
         {
             InitializeComponent();
         }
 
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
