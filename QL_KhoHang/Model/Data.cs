@@ -14,9 +14,9 @@ namespace QL_KhoHang.Model
         public static SqlConnection sqlCon;
         public static SqlCommand cmd;
 
-        public static void Connect()
+        private static void Connect()
         {
-            sqlCon = new SqlConnection("Data Source=.;Initial Catalog=QLNhanSu;Integrated Security=True");
+            sqlCon = new SqlConnection("Data Source=.;Initial Catalog=QL_KhoHang;Integrated Security=True");
             if (sqlCon.State == ConnectionState.Closed)
             {
                 sqlCon.Open();
@@ -41,7 +41,6 @@ namespace QL_KhoHang.Model
         public static void SQL(String sql)
         {
             Connect();
-
             cmd = sqlCon.CreateCommand();
             cmd.CommandText = sql;
             cmd.ExecuteNonQuery();
@@ -53,8 +52,8 @@ namespace QL_KhoHang.Model
             if(sqlCon.State == ConnectionState.Open)
             {
                 sqlCon.Close();
-                sqlCon = null;
                 sqlCon.Dispose();
+                sqlCon = null; 
             }
         }
 

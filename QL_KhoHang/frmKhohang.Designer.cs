@@ -34,11 +34,10 @@ namespace QL_KhoHang
             this.txtMakho = new System.Windows.Forms.TextBox();
             this.txtTenkho = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.btnThoat = new System.Windows.Forms.Button();
+            this.btnTimkiem = new System.Windows.Forms.Button();
             this.btnXoa = new System.Windows.Forms.Button();
             this.btnSua = new System.Windows.Forms.Button();
             this.btnThem = new System.Windows.Forms.Button();
-            this.btnTimkiem = new System.Windows.Forms.Button();
             this.dvKhohang = new System.Windows.Forms.DataGridView();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dvKhohang)).BeginInit();
@@ -46,6 +45,9 @@ namespace QL_KhoHang
             // 
             // label1
             // 
+            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label1.Location = new System.Drawing.Point(51, 38);
@@ -56,6 +58,9 @@ namespace QL_KhoHang
             // 
             // label2
             // 
+            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label2.Location = new System.Drawing.Point(51, 110);
@@ -66,6 +71,9 @@ namespace QL_KhoHang
             // 
             // txtMakho
             // 
+            this.txtMakho.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtMakho.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txtMakho.Location = new System.Drawing.Point(167, 30);
             this.txtMakho.Name = "txtMakho";
@@ -74,6 +82,9 @@ namespace QL_KhoHang
             // 
             // txtTenkho
             // 
+            this.txtTenkho.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtTenkho.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txtTenkho.Location = new System.Drawing.Point(167, 102);
             this.txtTenkho.Name = "txtTenkho";
@@ -82,8 +93,10 @@ namespace QL_KhoHang
             // 
             // groupBox1
             // 
+            this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBox1.Controls.Add(this.btnTimkiem);
-            this.groupBox1.Controls.Add(this.btnThoat);
             this.groupBox1.Controls.Add(this.btnXoa);
             this.groupBox1.Controls.Add(this.btnSua);
             this.groupBox1.Controls.Add(this.btnThem);
@@ -93,23 +106,23 @@ namespace QL_KhoHang
             this.groupBox1.TabIndex = 3;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Chức năng";
+            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
-            // btnThoat
+            // btnTimkiem
             // 
-            this.btnThoat.BackColor = System.Drawing.Color.Red;
-            this.btnThoat.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnThoat.Location = new System.Drawing.Point(44, 380);
-            this.btnThoat.Name = "btnThoat";
-            this.btnThoat.Size = new System.Drawing.Size(94, 40);
-            this.btnThoat.TabIndex = 0;
-            this.btnThoat.Text = "Thoát";
-            this.btnThoat.UseVisualStyleBackColor = false;
-            this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
+            this.btnTimkiem.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnTimkiem.Location = new System.Drawing.Point(6, 68);
+            this.btnTimkiem.Name = "btnTimkiem";
+            this.btnTimkiem.Size = new System.Drawing.Size(125, 40);
+            this.btnTimkiem.TabIndex = 0;
+            this.btnTimkiem.Text = "Tìm kiếm";
+            this.btnTimkiem.UseVisualStyleBackColor = true;
+            this.btnTimkiem.Click += new System.EventHandler(this.btnTimkiem_Click);
             // 
             // btnXoa
             // 
             this.btnXoa.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnXoa.Location = new System.Drawing.Point(0, 264);
+            this.btnXoa.Location = new System.Drawing.Point(6, 260);
             this.btnXoa.Name = "btnXoa";
             this.btnXoa.Size = new System.Drawing.Size(128, 37);
             this.btnXoa.TabIndex = 0;
@@ -120,7 +133,7 @@ namespace QL_KhoHang
             // btnSua
             // 
             this.btnSua.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnSua.Location = new System.Drawing.Point(0, 191);
+            this.btnSua.Location = new System.Drawing.Point(6, 217);
             this.btnSua.Name = "btnSua";
             this.btnSua.Size = new System.Drawing.Size(128, 37);
             this.btnSua.TabIndex = 0;
@@ -131,7 +144,7 @@ namespace QL_KhoHang
             // btnThem
             // 
             this.btnThem.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnThem.Location = new System.Drawing.Point(0, 123);
+            this.btnThem.Location = new System.Drawing.Point(6, 171);
             this.btnThem.Name = "btnThem";
             this.btnThem.Size = new System.Drawing.Size(128, 40);
             this.btnThem.TabIndex = 0;
@@ -139,18 +152,11 @@ namespace QL_KhoHang
             this.btnThem.UseVisualStyleBackColor = true;
             this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
             // 
-            // btnTimkiem
-            // 
-            this.btnTimkiem.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnTimkiem.Location = new System.Drawing.Point(19, 26);
-            this.btnTimkiem.Name = "btnTimkiem";
-            this.btnTimkiem.Size = new System.Drawing.Size(125, 40);
-            this.btnTimkiem.TabIndex = 0;
-            this.btnTimkiem.Text = "Tìm kiếm";
-            this.btnTimkiem.UseVisualStyleBackColor = true;
-            // 
             // dvKhohang
             // 
+            this.dvKhohang.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dvKhohang.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dvKhohang.Location = new System.Drawing.Point(13, 166);
             this.dvKhohang.Name = "dvKhohang";
@@ -172,6 +178,7 @@ namespace QL_KhoHang
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "frmKhohang";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Cập Nhật Kho Hàng";
             this.Load += new System.EventHandler(this.frmKhohang_Load);
             this.groupBox1.ResumeLayout(false);
@@ -193,7 +200,6 @@ namespace QL_KhoHang
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button btnTimkiem;
-        private System.Windows.Forms.Button btnThoat;
         private System.Windows.Forms.Button btnXoa;
         private System.Windows.Forms.Button btnSua;
         private System.Windows.Forms.Button btnThem;

@@ -45,11 +45,10 @@ namespace QL_KhoHang
             this.rdNu = new System.Windows.Forms.RadioButton();
             this.rdNam = new System.Windows.Forms.RadioButton();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.btnThem = new System.Windows.Forms.Button();
-            this.btnSua = new System.Windows.Forms.Button();
-            this.btnXoa = new System.Windows.Forms.Button();
             this.btnTimkiem = new System.Windows.Forms.Button();
-            this.btnThoat = new System.Windows.Forms.Button();
+            this.btnXoa = new System.Windows.Forms.Button();
+            this.btnSua = new System.Windows.Forms.Button();
+            this.btnThem = new System.Windows.Forms.Button();
             this.dvNhanvien = new System.Windows.Forms.DataGridView();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dvNhanvien)).BeginInit();
@@ -172,10 +171,12 @@ namespace QL_KhoHang
             this.txtSDT.Name = "txtSDT";
             this.txtSDT.Size = new System.Drawing.Size(212, 34);
             this.txtSDT.TabIndex = 1;
+            this.txtSDT.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtSDT_KeyPress);
             // 
             // dateTimePicker1
             // 
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateTimePicker1.CustomFormat = "dd/MM/yyyy";
+            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dateTimePicker1.Location = new System.Drawing.Point(166, 62);
             this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.dateTimePicker1.Name = "dateTimePicker1";
@@ -185,19 +186,19 @@ namespace QL_KhoHang
             // rdNu
             // 
             this.rdNu.AutoSize = true;
-            this.rdNu.Location = new System.Drawing.Point(653, 66);
+            this.rdNu.Location = new System.Drawing.Point(746, 68);
             this.rdNu.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.rdNu.Name = "rdNu";
             this.rdNu.Size = new System.Drawing.Size(61, 30);
             this.rdNu.TabIndex = 3;
-            this.rdNu.TabStop = true;
             this.rdNu.Text = "Nữ";
             this.rdNu.UseVisualStyleBackColor = true;
             // 
             // rdNam
             // 
             this.rdNam.AutoSize = true;
-            this.rdNam.Location = new System.Drawing.Point(742, 66);
+            this.rdNam.Checked = true;
+            this.rdNam.Location = new System.Drawing.Point(659, 68);
             this.rdNam.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.rdNam.Name = "rdNam";
             this.rdNam.Size = new System.Drawing.Size(77, 30);
@@ -208,7 +209,6 @@ namespace QL_KhoHang
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.btnThoat);
             this.groupBox1.Controls.Add(this.btnTimkiem);
             this.groupBox1.Controls.Add(this.btnXoa);
             this.groupBox1.Controls.Add(this.btnSua);
@@ -220,50 +220,45 @@ namespace QL_KhoHang
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Chức năng";
             // 
-            // btnThem
-            // 
-            this.btnThem.Location = new System.Drawing.Point(13, 33);
-            this.btnThem.Name = "btnThem";
-            this.btnThem.Size = new System.Drawing.Size(155, 40);
-            this.btnThem.TabIndex = 0;
-            this.btnThem.Text = "Thêm Mới";
-            this.btnThem.UseVisualStyleBackColor = true;
-            // 
-            // btnSua
-            // 
-            this.btnSua.Location = new System.Drawing.Point(193, 33);
-            this.btnSua.Name = "btnSua";
-            this.btnSua.Size = new System.Drawing.Size(155, 40);
-            this.btnSua.TabIndex = 0;
-            this.btnSua.Text = "Cập Nhật";
-            this.btnSua.UseVisualStyleBackColor = true;
-            // 
-            // btnXoa
-            // 
-            this.btnXoa.Location = new System.Drawing.Point(376, 33);
-            this.btnXoa.Name = "btnXoa";
-            this.btnXoa.Size = new System.Drawing.Size(155, 40);
-            this.btnXoa.TabIndex = 0;
-            this.btnXoa.Text = "Xóa";
-            this.btnXoa.UseVisualStyleBackColor = true;
-            // 
             // btnTimkiem
             // 
-            this.btnTimkiem.Location = new System.Drawing.Point(548, 33);
+            this.btnTimkiem.Location = new System.Drawing.Point(628, 42);
             this.btnTimkiem.Name = "btnTimkiem";
             this.btnTimkiem.Size = new System.Drawing.Size(155, 40);
             this.btnTimkiem.TabIndex = 0;
             this.btnTimkiem.Text = "Tìm Kiếm";
             this.btnTimkiem.UseVisualStyleBackColor = true;
+            this.btnTimkiem.Click += new System.EventHandler(this.btnTimkiem_Click);
             // 
-            // btnThoat
+            // btnXoa
             // 
-            this.btnThoat.Location = new System.Drawing.Point(721, 85);
-            this.btnThoat.Name = "btnThoat";
-            this.btnThoat.Size = new System.Drawing.Size(155, 40);
-            this.btnThoat.TabIndex = 0;
-            this.btnThoat.Text = "Thoát";
-            this.btnThoat.UseVisualStyleBackColor = true;
+            this.btnXoa.Location = new System.Drawing.Point(456, 42);
+            this.btnXoa.Name = "btnXoa";
+            this.btnXoa.Size = new System.Drawing.Size(155, 40);
+            this.btnXoa.TabIndex = 0;
+            this.btnXoa.Text = "Xóa";
+            this.btnXoa.UseVisualStyleBackColor = true;
+            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
+            // 
+            // btnSua
+            // 
+            this.btnSua.Location = new System.Drawing.Point(273, 42);
+            this.btnSua.Name = "btnSua";
+            this.btnSua.Size = new System.Drawing.Size(155, 40);
+            this.btnSua.TabIndex = 0;
+            this.btnSua.Text = "Cập Nhật";
+            this.btnSua.UseVisualStyleBackColor = true;
+            this.btnSua.Click += new System.EventHandler(this.btnSua_Click);
+            // 
+            // btnThem
+            // 
+            this.btnThem.Location = new System.Drawing.Point(93, 42);
+            this.btnThem.Name = "btnThem";
+            this.btnThem.Size = new System.Drawing.Size(155, 40);
+            this.btnThem.TabIndex = 0;
+            this.btnThem.Text = "Thêm Mới";
+            this.btnThem.UseVisualStyleBackColor = true;
+            this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
             // 
             // dvNhanvien
             // 
@@ -274,6 +269,7 @@ namespace QL_KhoHang
             this.dvNhanvien.RowTemplate.Height = 29;
             this.dvNhanvien.Size = new System.Drawing.Size(876, 210);
             this.dvNhanvien.TabIndex = 6;
+            this.dvNhanvien.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dvNhanvien_CellClick);
             // 
             // frmNhanvien
             // 
@@ -300,7 +296,9 @@ namespace QL_KhoHang
             this.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.Name = "frmNhanvien";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmNhanvien";
+            this.Load += new System.EventHandler(this.frmNhanvien_Load);
             this.groupBox1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dvNhanvien)).EndInit();
             this.ResumeLayout(false);
@@ -326,7 +324,6 @@ namespace QL_KhoHang
         private System.Windows.Forms.RadioButton rdNu;
         private System.Windows.Forms.RadioButton rdNam;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Button btnThoat;
         private System.Windows.Forms.Button btnTimkiem;
         private System.Windows.Forms.Button btnXoa;
         private System.Windows.Forms.Button btnSua;
