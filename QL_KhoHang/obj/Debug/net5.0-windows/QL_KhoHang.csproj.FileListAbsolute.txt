@@ -36,3 +36,5 @@ D:\Ren_Luyen_Nghe\QL_Kho\QL_KhoHang\QL_KhoHang\obj\Debug\net5.0-windows\ref\QL_K
 D:\Ren_Luyen_Nghe\QL_Kho\QL_KhoHang\QL_KhoHang\obj\Debug\net5.0-windows\QL_KhoHang.pdb
 D:\Ren_Luyen_Nghe\QL_Kho\QL_KhoHang\QL_KhoHang\obj\Debug\net5.0-windows\QL_KhoHang.genruntimeconfig.cache
 D:\Ren_Luyen_Nghe\QL_Kho\QL_KhoHang\QL_KhoHang\obj\Debug\net5.0-windows\QL_KhoHang.frmNhanvien.resources
+D:\Ren_Luyen_Nghe\QL_Kho\QL_KhoHang\QL_KhoHang\obj\Debug\net5.0-windows\QL_KhoHang.frmKhachhang.resources
+D:\Ren_Luyen_Nghe\QL_Kho\QL_KhoHang\QL_KhoHang\obj\Debug\net5.0-windows\QL_KhoHang.frmHanghoa.resources

@@ -4,6 +4,12 @@
     <Compile Update="frmDangnhap.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="frmHanghoa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="frmKhachhang.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="frmKhohang.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -11,6 +17,9 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="frmNhanvien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="frmPhieunhap.cs">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>

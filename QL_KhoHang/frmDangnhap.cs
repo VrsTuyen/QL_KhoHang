@@ -55,10 +55,10 @@ namespace QL_KhoHang
 
         private void textBox2_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (!char.IsLetter(e.KeyChar) && (e.KeyChar != '.') && !char.IsSurrogate(e.KeyChar)  )
+            /*if (!char.IsLetter(e.KeyChar) && (e.KeyChar != '.') && !char.IsSurrogate(e.KeyChar)  )
             {
                 e.Handled = true;
-            }
+            }*/
 
         }
     }

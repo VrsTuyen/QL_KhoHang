@@ -137,7 +137,7 @@ namespace QL_KhoHang
             this.txtManv.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.txtManv.Name = "txtManv";
             this.txtManv.Size = new System.Drawing.Size(214, 34);
-            this.txtManv.TabIndex = 1;
+            this.txtManv.TabIndex = 0;
             this.txtManv.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // txtQuequan
@@ -146,7 +146,7 @@ namespace QL_KhoHang
             this.txtQuequan.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.txtQuequan.Name = "txtQuequan";
             this.txtQuequan.Size = new System.Drawing.Size(214, 34);
-            this.txtQuequan.TabIndex = 1;
+            this.txtQuequan.TabIndex = 5;
             // 
             // txtCMTND
             // 
@@ -154,7 +154,8 @@ namespace QL_KhoHang
             this.txtCMTND.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.txtCMTND.Name = "txtCMTND";
             this.txtCMTND.Size = new System.Drawing.Size(214, 34);
-            this.txtCMTND.TabIndex = 1;
+            this.txtCMTND.TabIndex = 7;
+            this.txtCMTND.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtCMTND_KeyPress);
             // 
             // txtTen
             // 
@@ -170,7 +171,7 @@ namespace QL_KhoHang
             this.txtSDT.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.txtSDT.Name = "txtSDT";
             this.txtSDT.Size = new System.Drawing.Size(212, 34);
-            this.txtSDT.TabIndex = 1;
+            this.txtSDT.TabIndex = 6;
             this.txtSDT.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtSDT_KeyPress);
             // 
             // dateTimePicker1
@@ -190,7 +191,7 @@ namespace QL_KhoHang
             this.rdNu.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.rdNu.Name = "rdNu";
             this.rdNu.Size = new System.Drawing.Size(61, 30);
-            this.rdNu.TabIndex = 3;
+            this.rdNu.TabIndex = 4;
             this.rdNu.Text = "Nữ";
             this.rdNu.UseVisualStyleBackColor = true;
             // 
@@ -202,7 +203,7 @@ namespace QL_KhoHang
             this.rdNam.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.rdNam.Name = "rdNam";
             this.rdNam.Size = new System.Drawing.Size(77, 30);
-            this.rdNam.TabIndex = 4;
+            this.rdNam.TabIndex = 3;
             this.rdNam.TabStop = true;
             this.rdNam.Text = "Nam";
             this.rdNam.UseVisualStyleBackColor = true;
@@ -225,7 +226,7 @@ namespace QL_KhoHang
             this.btnTimkiem.Location = new System.Drawing.Point(628, 42);
             this.btnTimkiem.Name = "btnTimkiem";
             this.btnTimkiem.Size = new System.Drawing.Size(155, 40);
-            this.btnTimkiem.TabIndex = 0;
+            this.btnTimkiem.TabIndex = 11;
             this.btnTimkiem.Text = "Tìm Kiếm";
             this.btnTimkiem.UseVisualStyleBackColor = true;
             this.btnTimkiem.Click += new System.EventHandler(this.btnTimkiem_Click);
@@ -235,7 +236,7 @@ namespace QL_KhoHang
             this.btnXoa.Location = new System.Drawing.Point(456, 42);
             this.btnXoa.Name = "btnXoa";
             this.btnXoa.Size = new System.Drawing.Size(155, 40);
-            this.btnXoa.TabIndex = 0;
+            this.btnXoa.TabIndex = 10;
             this.btnXoa.Text = "Xóa";
             this.btnXoa.UseVisualStyleBackColor = true;
             this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
@@ -245,7 +246,7 @@ namespace QL_KhoHang
             this.btnSua.Location = new System.Drawing.Point(273, 42);
             this.btnSua.Name = "btnSua";
             this.btnSua.Size = new System.Drawing.Size(155, 40);
-            this.btnSua.TabIndex = 0;
+            this.btnSua.TabIndex = 9;
             this.btnSua.Text = "Cập Nhật";
             this.btnSua.UseVisualStyleBackColor = true;
             this.btnSua.Click += new System.EventHandler(this.btnSua_Click);
@@ -255,7 +256,7 @@ namespace QL_KhoHang
             this.btnThem.Location = new System.Drawing.Point(93, 42);
             this.btnThem.Name = "btnThem";
             this.btnThem.Size = new System.Drawing.Size(155, 40);
-            this.btnThem.TabIndex = 0;
+            this.btnThem.TabIndex = 8;
             this.btnThem.Text = "Thêm Mới";
             this.btnThem.UseVisualStyleBackColor = true;
             this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
@@ -268,7 +269,7 @@ namespace QL_KhoHang
             this.dvNhanvien.RowHeadersWidth = 51;
             this.dvNhanvien.RowTemplate.Height = 29;
             this.dvNhanvien.Size = new System.Drawing.Size(876, 210);
-            this.dvNhanvien.TabIndex = 6;
+            this.dvNhanvien.TabIndex = 12;
             this.dvNhanvien.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dvNhanvien_CellClick);
             // 
             // frmNhanvien

@@ -27,7 +27,10 @@ namespace QL_KhoHang
 
         private void txtSDT_KeyPress(object sender, KeyPressEventArgs e)
         {
-
+            if (!char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar))
+            {
+                e.Handled = true;
+            }
         }
         private String Rad()
         {
@@ -175,6 +178,14 @@ namespace QL_KhoHang
             txtQuequan.Text = dvNhanvien.Rows[index].Cells[4].Value.ToString().Trim();
             txtSDT.Text = dvNhanvien.Rows[index].Cells[5].Value.ToString().Trim();
             txtCMTND.Text = dvNhanvien.Rows[index].Cells[6].Value.ToString().Trim();
+        }
+
+        private void txtCMTND_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar))
+            {
+                e.Handled = true;
+            }
         }
     }
 }
