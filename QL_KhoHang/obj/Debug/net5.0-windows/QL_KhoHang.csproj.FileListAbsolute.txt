@@ -38,3 +38,6 @@ D:\Ren_Luyen_Nghe\QL_Kho\QL_KhoHang\QL_KhoHang\obj\Debug\net5.0-windows\QL_KhoHa
 D:\Ren_Luyen_Nghe\QL_Kho\QL_KhoHang\QL_KhoHang\obj\Debug\net5.0-windows\QL_KhoHang.frmNhanvien.resources
 D:\Ren_Luyen_Nghe\QL_Kho\QL_KhoHang\QL_KhoHang\obj\Debug\net5.0-windows\QL_KhoHang.frmKhachhang.resources
 D:\Ren_Luyen_Nghe\QL_Kho\QL_KhoHang\QL_KhoHang\obj\Debug\net5.0-windows\QL_KhoHang.frmHanghoa.resources
+D:\Ren_Luyen_Nghe\QL_Kho\QL_KhoHang\QL_KhoHang\obj\Debug\net5.0-windows\QL_KhoHang.frmPhieunhap.resources
+D:\Ren_Luyen_Nghe\QL_Kho\QL_KhoHang\QL_KhoHang\obj\Debug\net5.0-windows\QL_KhoHang.frmHoadon.resources
+D:\Ren_Luyen_Nghe\QL_Kho\QL_KhoHang\QL_KhoHang\obj\Debug\net5.0-windows\QL_KhoHang.frmHoadonCT.resources

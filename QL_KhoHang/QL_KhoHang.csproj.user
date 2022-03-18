@@ -7,6 +7,12 @@
     <Compile Update="frmHanghoa.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="frmHoadon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="frmHoadonCT.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="frmKhachhang.cs">
       <SubType>Form</SubType>
     </Compile>
