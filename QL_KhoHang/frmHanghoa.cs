@@ -143,6 +143,13 @@ namespace QL_KhoHang
             }
         }
 
+        private void frmHanghoa_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            frmMain m = new frmMain();
+            this.Hide();
+            m.ShowDialog();
+        }
+
         private void frmHanghoa_Load(object sender, EventArgs e)
         {
             sql = "select * from tbl_KhoHang";

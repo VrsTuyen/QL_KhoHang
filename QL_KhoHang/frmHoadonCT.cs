@@ -167,16 +167,24 @@ namespace QL_KhoHang
                     tt = sl * dg;
                     dvHDCT.CurrentRow.Cells[3].Value = tt.ToString();
 
-                    Tongt = 0;
-                    for (int i = 0; i < dvHDCT.Rows.Count - 1; i++)
-                    {
-                        Tongt = Tongt + int.Parse(dvHDCT.Rows[i].Cells[3].Value.ToString());
-
-                    }
-                    lbTongtien.Text = Tongt.ToString();
+                    
                 }
-                
+                Tongt = 0;
+                for (int i = 0; i < dvHDCT.Rows.Count - 1; i++)
+                {
+                    Tongt = Tongt + int.Parse(dvHDCT.Rows[i].Cells[3].Value.ToString());
+
+                }
+                lbTongtien.Text = Tongt.ToString();
+
             }
+        }
+
+        private void frmHoadonCT_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            frmHoadon hd = new frmHoadon();
+            this.Hide();
+            hd.ShowDialog();
         }
     }
 }

@@ -91,6 +91,7 @@ namespace QL_KhoHang
             this.Name = "frmHoadon";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Danh sách hóa đơn";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmHoadon_FormClosing);
             this.Load += new System.EventHandler(this.frmHoadon_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dvHoadon)).EndInit();
             this.ResumeLayout(false);

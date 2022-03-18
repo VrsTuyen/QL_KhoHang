@@ -158,6 +158,13 @@ namespace QL_KhoHang
             }
         }
 
+        private void frmKhachhang_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            frmMain m = new frmMain();
+            this.Hide();
+            m.ShowDialog();
+        }
+
         private void dvKhachhang_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             index = e.RowIndex;

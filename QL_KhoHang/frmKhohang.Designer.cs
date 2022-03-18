@@ -180,6 +180,7 @@ namespace QL_KhoHang
             this.Name = "frmKhohang";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Cập Nhật Kho Hàng";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmKhohang_FormClosing);
             this.Load += new System.EventHandler(this.frmKhohang_Load);
             this.groupBox1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dvKhohang)).EndInit();

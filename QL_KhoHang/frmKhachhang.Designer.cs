@@ -255,6 +255,7 @@ namespace QL_KhoHang
             this.Name = "frmKhachhang";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmKhachhang";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmKhachhang_FormClosing);
             this.Load += new System.EventHandler(this.frmKhachhang_Load);
             this.groupBox1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dvKhachhang)).EndInit();

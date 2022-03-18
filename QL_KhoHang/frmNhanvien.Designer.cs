@@ -299,6 +299,7 @@ namespace QL_KhoHang
             this.Name = "frmNhanvien";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmNhanvien";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmNhanvien_FormClosing);
             this.Load += new System.EventHandler(this.frmNhanvien_Load);
             this.groupBox1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dvNhanvien)).EndInit();

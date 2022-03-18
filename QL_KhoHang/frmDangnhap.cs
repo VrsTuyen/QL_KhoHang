@@ -19,7 +19,7 @@ namespace QL_KhoHang
         int count = 0;
         private void button1_Click(object sender, EventArgs e)
         {
-            if(!textBox1.Text.Equals("") && !textBox2.Text.Equals(""))
+            if(textBox1.Text.Equals("") && textBox2.Text.Equals(""))
             {
                 return;
             }
@@ -60,6 +60,16 @@ namespace QL_KhoHang
                 e.Handled = true;
             }*/
 
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Environment.Exit(0);
+        }
+
+        private void frmDangnhap_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Environment.Exit(0);
         }
     }
 }

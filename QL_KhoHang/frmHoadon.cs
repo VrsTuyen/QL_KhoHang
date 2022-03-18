@@ -49,7 +49,7 @@ namespace QL_KhoHang
 
         private void frmHoadon_Load(object sender, EventArgs e)
         {
-            String sql = "select tbl_HoaDon.Mahoadon, tbl_NhanVien.Manhanvien, tbl_KhachHang.Hoten, Ngaymua, Tongtien from tbl_HoaDon inner join tbl_NhanVien on tbl_NhanVien.Manhanvien = tbl_HoaDon.Manhanvien inner join tbl_KhachHang on tbl_HoaDon.Makhach = tbl_KhachHang.Makhach";
+            string sql = "select tbl_HoaDon.Mahoadon, tbl_NhanVien.Manhanvien, tbl_KhachHang.Hoten, Ngaymua, Tongtien from tbl_HoaDon inner join tbl_NhanVien on tbl_NhanVien.Manhanvien = tbl_HoaDon.Manhanvien inner join tbl_KhachHang on tbl_HoaDon.Makhach = tbl_KhachHang.Makhach";
             table = Data.Table(sql);
             dvHoadon.DataSource = table;
             dvHoadon.Columns[0].HeaderText = "Mã hóa đơn";
@@ -74,6 +74,13 @@ namespace QL_KhoHang
                 this.Tag = dvHoadon.Rows[index].Cells[0].Value.ToString();
             }
            
+        }
+
+        private void frmHoadon_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            frmMain m = new frmMain();
+            this.Hide();
+            m.ShowDialog();
         }
     }
 }

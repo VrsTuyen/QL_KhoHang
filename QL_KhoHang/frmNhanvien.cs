@@ -187,5 +187,12 @@ namespace QL_KhoHang
                 e.Handled = true;
             }
         }
+
+        private void frmNhanvien_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            frmMain m = new frmMain();
+            this.Hide();
+            m.ShowDialog();
+        }
     }
 }

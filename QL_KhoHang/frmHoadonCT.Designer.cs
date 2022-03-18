@@ -181,6 +181,7 @@ namespace QL_KhoHang
             this.Name = "frmHoadonCT";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmHoadonCT";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmHoadonCT_FormClosing);
             this.Load += new System.EventHandler(this.frmHoadonCT_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dvHDCT)).EndInit();
             this.ResumeLayout(false);

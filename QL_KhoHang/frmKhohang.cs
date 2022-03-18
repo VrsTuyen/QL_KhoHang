@@ -119,5 +119,12 @@ namespace QL_KhoHang
                 
             }
         }
+
+        private void frmKhohang_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            frmMain m = new frmMain();
+            this.Hide();
+            m.ShowDialog();
+        }
     }
 }

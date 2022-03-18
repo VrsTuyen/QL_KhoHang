@@ -238,6 +238,7 @@ namespace QL_KhoHang
             this.Name = "frmHanghoa";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmHanghoa";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmHanghoa_FormClosing);
             this.Load += new System.EventHandler(this.frmHanghoa_Load);
             this.groupBox1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dvHanghoa)).EndInit();
