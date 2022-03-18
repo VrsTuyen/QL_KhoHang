@@ -58,6 +58,7 @@ namespace QL_KhoHang
                 }
                 
             }
+            MessageBox.Show("Thành Công","Thông Báo");
         }
 
         private void frmHoadonCT_Load(object sender, EventArgs e)

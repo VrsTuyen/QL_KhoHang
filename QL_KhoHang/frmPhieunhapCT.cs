@@ -177,6 +177,7 @@ namespace QL_KhoHang
                 }
 
             }
+            MessageBox.Show("Thành Công","Thông Báo");
         }
 
         private void frmPhieunhapCT_FormClosing(object sender, FormClosingEventArgs e)

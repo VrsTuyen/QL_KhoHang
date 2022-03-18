@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.32126.315
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QL_KhoHang", "QL_KhoHang\QL_KhoHang.csproj", "{75DE59D0-EC1F-454C-A0F2-AB4F3297E595}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QL_KhoHang", "QL_KhoHang\QL_KhoHang.csproj", "{75DE59D0-EC1F-454C-A0F2-AB4F3297E595}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Setup", "Setup\Setup.vdproj", "{1BEDDBBD-AE15-4910-ABA1-9031D62B1ADA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,8 @@ Global
 		{75DE59D0-EC1F-454C-A0F2-AB4F3297E595}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{75DE59D0-EC1F-454C-A0F2-AB4F3297E595}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{75DE59D0-EC1F-454C-A0F2-AB4F3297E595}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1BEDDBBD-AE15-4910-ABA1-9031D62B1ADA}.Debug|Any CPU.ActiveCfg = Debug
+		{1BEDDBBD-AE15-4910-ABA1-9031D62B1ADA}.Release|Any CPU.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
